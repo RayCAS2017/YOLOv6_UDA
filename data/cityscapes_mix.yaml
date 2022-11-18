@@ -1,0 +1,18 @@
+# Please insure that your custom_dataset are put in same parent dir with YOLOv6_DIR
+train: datasets/cityscapes_to_foggy/mix/images/train # train images
+val: datasets/cityscapes_to_foggy/mix/images/val # val images
+test: datasets/cityscapes_to_foggy/mix/images/test # test images (optional)
+anno_path_s: datasets/cityscapes_to_foggy/mix/annotations/instances_val.json
+
+# whether it is coco dataset, only coco dataset should be set to True.
+is_coco: False
+# Classes
+nc: 8  # number of classes
+names: ['person',
+        'rider',
+        'car',
+        'truck',
+        'bus',
+        'train',
+        'motorcycle',
+        'bicycle',]  # class names
